@@ -1,54 +1,41 @@
-<table id="listar-dados" class="table table-striped table-bordered dataTable" style="width:100%">
+<div class="container">
+    <table id="listar-dados" class="table table-striped table-bordered dataTable bg-success" style="width:100%">
     
-    <?php
-        include_once 'model/confirmarAluno.php';
+    
+    <thead>
+        <tr>
+            <th class="text-light">Nome</th>
+            <th class="text-light">Tipo</th>
+            <th class="text-light">Hora de entrada</th>
+            <th class="text-light">Hora de saída</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
 
-            if(empty($result)) {
-    ?>
-            <span class="error">Preencha todos os campos</span>
     <?php
-    }
-        else if(mysqli_num_rows($result) == 0){
-            ?> 
-            <span class="error">Matrícula inválida</span>
-            <?php
-                
-    }else{
+        include_once 'model/listarEmprestimos.php';      
         
         while ($dados = mysqli_fetch_assoc($result)){
 
     ?>
     
-    <thead>
-        <tr>
-            <th>Matrícula</th>
-            <th>Nome</th>
-            <th>Série</th>
-            <th>Curso</th>
-        </tr>
-    </thead>
 
-    <tbody>
 
         <tr>
 
-        <td class="table-light"><?php print($dados["matricula"]);?></td>
-        <td class="table-light"><?php print($dados["nome"]);?></td>
-        <td class="table-light"><?php print($dados["serie"]);?></td>
-        <td class="table-light"><?php print($dados["curso"]);?></td> 
-        
-        <form action="model/realizarEmprestimo.php" method="POST">
-        <input type="hidden" name="matricula" value="<?= $dados["matricula"]?>">       
-        <input type="hidden" name="bola" value="<?= $_GET['bola']?>">       
-        <caption><input type="submit" name="submit" class="btn btn-success"></input></caption>
-        </form>
+            <td class="table-light"><?php print($dados["matricula"]);?></td>
+            <td class="table-light"><?php print($dados["tipo"]);?></td>
+            <td class="table-light"><?php print($dados["horaentrada"]);?></td>
+            <td class="table-light"><?php print($dados["horasaida"]);?></td>
+            <td class="table-light"><a style="text-decoration:none;" href="model/entregarBola.php">Entrega</a></td>
 
         </tr>
 
     <?php
-        }
-    }   
+        }   
     ?>
 
     <tbody>
 </table>
+</div>

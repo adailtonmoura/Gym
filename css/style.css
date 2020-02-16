@@ -82,10 +82,6 @@
        font-size: 1.5rem;
    }
    
-   #listar-dados {
-       margin-top: 50px;
-   }
-   
    input::-webkit-outer-spin-button,
    input::-webkit-inner-spin-button {
        -webkit-appearance: none;
@@ -105,4 +101,12 @@
    
    #consulta {
        background-color: white;
+   }
+   
+   #listar-dados_wrapper {
+       margin-top: 50px;
+   }
+   
+   #listardados {
+       margin-top: 50px;
    }

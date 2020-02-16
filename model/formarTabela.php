@@ -1,4 +1,4 @@
-<table id="listar-dados" class="table table-striped table-bordered dataTable" style="width:100%">
+<table id="listardados" class="table table-striped table-bordered dataTable bg-success" style="width:100%">
     
     <?php
         include_once 'model/confirmarAluno.php';
@@ -21,10 +21,10 @@
     
     <thead>
         <tr>
-            <th>Matrícula</th>
-            <th>Nome</th>
-            <th>Série</th>
-            <th>Curso</th>
+            <th class="text-light">Matrícula</th>
+            <th class="text-light">Nome</th>
+            <th class="text-light">Série</th>
+            <th class="text-light">Curso</th>
         </tr>
     </thead>
 

@@ -9,11 +9,7 @@
     
     $horaEntrada = date('H:i:s');
 
-    /*
-    echo $matricula;
-    echo $bola;
-    echo $horaEntrada;
-    */
+   
 
     if(!empty($matricula)){
 
