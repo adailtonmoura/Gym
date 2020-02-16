@@ -28,7 +28,7 @@
             <td class="table-light"><?php print($dados["tipo"]);?></td>
             <td class="table-light"><?php print($dados["horaentrada"]);?></td>
             <td class="table-light"><?php print($dados["horasaida"]);?></td>
-            <td class="table-light"><a style="text-decoration:none;" href="model/entregarBola.php">Entrega</a></td>
+            <td class="table-light"><a style="text-decoration:none;" href="model/entregarBola.php?id=<?= $dados["id"]?>">Entrega</a></td>
 
         </tr>
 
