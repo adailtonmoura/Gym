@@ -76,8 +76,33 @@
        align-items: center;
    }
    
+   #escolherBola {
+       margin-top: 20px;
+       font-weight: 500;
+       font-size: 1.5rem;
+   }
+   
+   #listar-dados {
+       margin-top: 50px;
+   }
+   
    input::-webkit-outer-spin-button,
    input::-webkit-inner-spin-button {
        -webkit-appearance: none;
        margin: 0;
+   }
+   
+   #myModal {
+       top: 20%;
+       text-align: center;
+       outline: none;
+   }
+   
+   #modalcorpo {
+       padding-top: 5px;
+       background-color: rgba(141, 226, 119, .5);
+   }
+   
+   #consulta {
+       background-color: white;
    }

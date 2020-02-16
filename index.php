@@ -13,6 +13,10 @@
             case 'emprestimo':
                 include_once 'view/emprestimo.php';
                 break;
+
+                case 'consulta':
+                    include_once 'view/consulta.php';
+                    break;
         }
         ?>
 

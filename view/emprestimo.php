@@ -1,6 +1,6 @@
   <div class="container">
       <form action="" method="POST">
-        <p class="text-center"> Você quer pegar uma bola de: <?php echo $_GET["bola"]?></p>
+        <p id ="escolherBola" class="text-center"> Você quer pegar uma bola de: <?php echo $_GET["bola"]?></p>
 
         <div class="form-group">
           <label for="input">Matrícula</label>
