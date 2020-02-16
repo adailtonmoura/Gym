@@ -2,7 +2,7 @@
 
 $servidor = "localhost";
 $usuario = "root";
-$senha = "MyPassword";
+$senha = "";
 $database = "ginasio";
 
 $conexao = mysqli_connect($servidor, $usuario, $senha, $database);  
