@@ -1,0 +1,19 @@
+{
+    "name": "gym/gym",
+    "type": "project",
+    "description": "",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Adailton Moura",
+            "email": "adailton.silva091@academico.ifs.edu.br"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+
+            "App\\": "App/"
+        }
+    }
+}
